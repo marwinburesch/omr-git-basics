@@ -1,0 +1,70 @@
+@import url("https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap");
+/* https://coolors.co/264653-2a9d8f-e76f51-e9c46a-f4a261 */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Indie Flower", cursive;
+  color: white;
+  font-size: 24px;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  display: grid;
+  place-items: center;
+  background-color: #264653;
+  text-align: center;
+}
+.minipage {
+  width: 60%;
+  max-width: 470px;
+  height: 35%;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.page-header {
+  position: relative;
+  background-color: #2a9d8f;
+}
+.menu-button {
+  width: 30px;
+  color: white;
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  margin: 0.2rem;
+}
+.menu-button:active,
+:focus {
+  outline-color: #e76f51;
+}
+.refresh-icon {
+  width: 40%;
+  animation: infinite-spin 10s linear infinite;
+}
+.page-main {
+  flex-grow: 1;
+  background-color: #e76f51;
+}
+.round-top {
+  border-radius: 20px 20px 0 0;
+}
+.round-bottom {
+  border-radius: 0 0 20px 20px;
+}
+.shadow {
+}
+@keyframes infinite-spin {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
